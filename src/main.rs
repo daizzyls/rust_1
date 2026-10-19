@@ -27,5 +27,9 @@ fn main() {
     println!("base 2(binary) : {:b}", 52);
     println!("base 8(octal) : {:o}", 52);
 
+    let num : i8= 5;
+    let width : i8 = 3;
+    println!("{num:<width$}")
+
     println!("{}", sum_arr([1, 2, 3, 4, 5]));
 }
