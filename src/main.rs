@@ -38,8 +38,8 @@ fn main() {
     //println!("{}" ,s); не скомпилируется
 
     let num: f32 = 52.001;
-    let width: usize = 6;
-    println!("{num:<width$}");
+    let width: usize = 10;
+    println!("{num:>width$}");
 
     println!("{}", sum_arr([1, 2, 3, 4, 5]));
 }
