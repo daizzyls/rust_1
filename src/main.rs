@@ -27,17 +27,19 @@ fn main() {
     println!("base 2(binary) : {:b}", 52);
     println!("base 8(octal) : {:o}", 52);
 
-    let num : i8= 5;
-    let width : usize = 3; //не дает сделать дургой инт даже Юинт старнно!!!
-    println!("{num:<width$}" , num = num , width = width);
-    println!("{0:<1$}" , num ,width);
+    let num: i8 = 5;
+    let width: usize = 3; //не дает сделать дургой инт даже Юинт старнно!!!
+    println!("{num:<width$}", num = num, width = width);
+    println!("{0:<1$}", num, width);
 
-    #[allow(dead_code)] // disable `dead_code` which warn against unused module
-    struct Structure(i32);
-    let s = Structure(5);
-    println!("{}" ,s);
+    //#[allow(dead_code)] // disable `dead_code` which warn against unused module
+    //struct Structure(i32);
+    //let s = Structure(5);
+    //println!("{}" ,s); не скомпилируется
 
-    
+    let num: f32 = 52.001;
+    let width: usize = 6;
+    println!("{num:<width$}");
 
     println!("{}", sum_arr([1, 2, 3, 4, 5]));
 }
