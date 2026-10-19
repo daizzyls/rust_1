@@ -28,8 +28,16 @@ fn main() {
     println!("base 8(octal) : {:o}", 52);
 
     let num : i8= 5;
-    let width : i8 = 3;
-    println!("{num:<width$}")
+    let width : usize = 3; //не дает сделать дургой инт даже Юинт старнно!!!
+    println!("{num:<width$}" , num = num , width = width);
+    println!("{0:<1$}" , num ,width);
+
+    #[allow(dead_code)] // disable `dead_code` which warn against unused module
+    struct Structure(i32);
+    let s = Structure(5);
+    println!("{}" ,s);
+
+    
 
     println!("{}", sum_arr([1, 2, 3, 4, 5]));
 }
